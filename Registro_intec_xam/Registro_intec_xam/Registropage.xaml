@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Registro_intec_xam.Registropage"
+             Title="Login">
+    
+    
+    <ContentPage.Content>
+        
+        <ScrollView>
+        <StackLayout>
+            <Image Source="logointec.jpg" VerticalOptions="Center"></Image> 
+            
+            <Entry x:Name="Entry_Email" Placeholder="Email"
+                   VerticalOptions="CenterAndExpand" />
+
+            <Entry x:Name="Entry_Password" IsPassword="True" Placeholder="Password"
+                   VerticalOptions="CenterAndExpand" />
+
+            <Button x:Name="Bt_Login" Text="Login" Clicked="Bt_Login_Clicked"
+                    BackgroundColor="Red"
+                    TextColor="White"/>
+
+            <Button x:Name="Bt_Registro" Text="Registrarse" Clicked="Bt_Registro_Clicked"
+                    TextColor="Red"/>
+            
+        </StackLayout>
+            </ScrollView>
+    </ContentPage.Content>
+    
+</ContentPage>
